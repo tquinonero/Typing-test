@@ -1,1 +1,68 @@
-#
+#typing-test-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#test-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+#user-input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#results {
+    margin-bottom: 20px;
+}
+
+#start-test, #stop-test {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#start-test {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#stop-test {
+    background-color: #FF0000;
+    color: white;
+}
+
+#start-test:hover {
+    background-color: #45a049;
+}
+
+#stop-test:hover {
+    background-color: #D10000;
+}
+
+#start-test:disabled, #stop-test:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+    text-decoration: underline;
+}
