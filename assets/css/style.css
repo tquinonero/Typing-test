@@ -5,6 +5,12 @@
     font-family: Arial, sans-serif;
 }
 
+#level-indicator {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
 #test-text {
     font-size: 18px;
     line-height: 1.5;
@@ -27,12 +33,13 @@
     margin-bottom: 20px;
 }
 
-#start-test, #stop-test {
+#start-test, #stop-test, #next-level, #reset-test {
     padding: 10px 20px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    margin-right: 10px;
 }
 
 #start-test {
@@ -45,24 +52,41 @@
     color: white;
 }
 
-#start-test:hover {
-    background-color: #45a049;
+#next-level {
+    background-color: #2196F3;
+    color: white;
+}
+
+#reset-test {
+    background-color: #FFC107;
+    color: black;
+}
+
+#start-test:hover, #next-level:hover {
+    opacity: 0.8;
 }
 
 #stop-test:hover {
     background-color: #D10000;
 }
 
-#start-test:disabled, #stop-test:disabled {
+#reset-test:hover {
+    background-color: #FFA000;
+}
+
+#start-test:disabled, #stop-test:disabled, #next-level:disabled, #reset-test:disabled {
     background-color: #cccccc;
     cursor: not-allowed;
 }
 
 .correct {
     color: green;
+    text-decoration: underline;
+    text-decoration-color: green;
 }
 
 .incorrect {
     color: red;
     text-decoration: underline;
+    text-decoration-color: red;
 }
